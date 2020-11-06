@@ -1,0 +1,25 @@
+
+.codigo {
+	display: inline-block;
+	border: 1px black none;
+	padding: 10px;
+	margin: 1px;
+	width: auto;
+	background-color: #cc0000;
+	border-radius: 5px;
+	color: #ffffff;
+	font-weight: bold;
+	
+}
+
+.codigo:hover{
+	background-color: #660000;
+}
+
+.cronometro{
+	display: inline-block;
+	font-size: 1.3em;
+	font-weight: bold;
+}
+
+

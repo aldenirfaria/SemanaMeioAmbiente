@@ -1,0 +1,99 @@
+<!--DESENVOLVIDO POR ALDENIR FARIA - DEPARTAMENTO DE TECONOLIGIA DA INFORMAÇÃO - SCHADEK AUTOMOTIVE LTDA 01/06/2020 -->
+
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Gincana Ambiental</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" href="cronometro.css" type="text/css" media="screen" />
+  <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
+  <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
+  <link rel="stylesheet" type="text/css" href='https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css'>
+  <script language="JavaScript" src="cronometro.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+
+</head>
+
+<body>
+  <section class="page-header">
+    <img src="logo-schadek.png" alt="LOGO SCHADEK" >
+    <h1 class="project-name">Gincana Ambiental</h1>
+    <h2 class="project-tagline">Desafio do Caça Palavras</h2>
+  </section>
+
+  <section class="main-content">
+
+    <div id='puzzle'></div>
+    <div id='words'></div>
+    <!--<div><button id='solve'>Resolver o Puzzle</button></div>-->
+
+    <footer class="site-footer">
+      <span class="site-footer-owner">Semana do meio ambiente na Schadek Automotive, não perca a oportunidade de ganhar seu prêmio!</span>
+      <script language="javascript" type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+      <script src="app/wordfind.js"></script>
+      <script type="text/javascript" src="app/wordfindgame.js"></script>
+
+
+      <script>
+5
+        var words = [
+
+
+          'SEMANA', 'MEIOAMBIENTE', 'EVITAR', 'SUSTENTÁVEL', 'SEPARAR',
+          'EDUCAR', 'SCHADEK', "RECICLAR", "RESÍDUOS", "CUIDAR",
+
+        ];
+
+        // start a word find game
+        var gamePuzzle = wordfindgame.create(words, '#puzzle', '#words');
+
+        $('#solve').click(function () {
+          wordfindgame.solve(gamePuzzle, words);
+        });
+
+        // create just a puzzle, without filling in the blanks and print to console
+        var puzzle = wordfind.newPuzzle(words, {
+          height: 20,
+          width: 20
+        });
+        wordfind.print(puzzle);
+       
+      </script>
+
+    </footer>
+  </section>
+  <section>
+    <p class="cronometro">Cronômetro:</p>
+    <div class="codigo">
+      <span id="hora">00h</span><span id="minuto">00m</span><span id="segundo">00s</span><br>
+      
+            <div id="voltas"></div>
+    </div>
+    <p class="redes-sociais">Siga nossas redes sociais e fique ligado em todas as novidades!</p>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <div class="icons">
+    <a href="https://www.facebook.com/Schadek/"><i class="fa fa-facebook"></i></a>
+    <a href="https://twitter.com/SchadekAutomot1"><i class="fa fa-twitter"></i></a>
+    <a href="https://www.instagram.com/schadekautomotive/"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.linkedin.com/company/schadek-automotive?originalSubdomain=br"><i class="fa fa-linkedin"></i></a>
+    <a href="https://www.youtube.com/channel/UCOp8Q5KN6Zw1coaWZJBD0IQ"><i class="fa fa-youtube"></i></a>
+  </div>
+</section>
+  <section>
+    <div class="copyright-schadek">
+      <p>
+        © Copyright 2020. Schadek Automotive - Semana do Meio Ambiente - Todos os direitos reservados.
+      </p>
+    </div>
+    <!--<img src="logo-schadek.png" alt="LOGO SCHADEK" style="width: 22px; display: inline-block;">-->
+  </section>
+</body>
+
+</html>
